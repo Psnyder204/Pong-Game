@@ -12,8 +12,6 @@ function setup() {
     ball = new Ball();
     playerScore = new Score();
     aiScore = new Score();
-
-
 }
 
 function draw() {
@@ -41,7 +39,7 @@ function draw() {
     if (ball.x + ball.r > width) {
         playerScore.increment();
     }
-    if (ball.x - ball.r > width) {
+    if (ball.x - ball.r < 0) {
         aiScore.increment();
     }
 }

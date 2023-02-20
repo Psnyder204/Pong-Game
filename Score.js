@@ -1,11 +1,7 @@
 class Score{
 
     constructor(){
-        this.score = 0;
-
-      
-        
-        
+        this.score = 0; 
     }
 
     displayPlayerScore() {
@@ -13,7 +9,6 @@ class Score{
         textSize(20);
         // textAlign(CENTER, TOP);
         text(`Player: ${this.score}`, 200, 30);
-
     }
 
     displayAiScore() {
@@ -21,7 +16,6 @@ class Score{
         textSize(20);
         // textAlign(CENTER, TOP);
         text(`AI: ${this.score}`, 350, 30);
-
     }
 
     increment() {
